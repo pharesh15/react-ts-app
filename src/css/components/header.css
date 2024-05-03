@@ -1,0 +1,18 @@
+.header {
+  width: 100%;
+  padding: 0.8rem 12rem;
+  background-color: #ee9f27;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navs ul, .header .navs ul, .header .auth ul, .header .auth ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navs ul li, .header .navs ul li, .header .auth ul li, .header .auth ul li {
+  list-style-type: none;
+  margin: 0rem 2rem;
+}/*# sourceMappingURL=header.css.map */

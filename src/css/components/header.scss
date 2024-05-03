@@ -1,0 +1,24 @@
+@import "../mixins";
+@import "../variables";
+
+.header{
+    @include commonStyle;
+    @include flex_row;
+    
+    .navs, .auth{
+        
+        ul, ul{
+            @include flex_row;
+            
+            li{
+                @include ul_li;
+                margin: 0rem 1.4rem;
+                
+                .nav{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        };
+    }
+}

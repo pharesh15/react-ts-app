@@ -1,0 +1,6 @@
+@import "../mixins";
+
+.footer{
+    @include commonStyle;
+    text-align: center;
+}

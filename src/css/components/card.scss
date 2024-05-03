@@ -1,0 +1,30 @@
+@import '../variables';
+@import '../mixins';
+
+.card{
+    border: 1px solid $primary;
+    background-color: rgba($color: $primary, $alpha: 0.1);
+    border-radius: 0.4rem;
+    width: 20rem;
+    padding: 1rem;
+    margin: 2rem 0 0 2rem;
+
+    p{
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    button{
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .btn-update{
+        @include btnStyle($primary, $white);
+    }
+
+    .btn-delete{
+        @include btnStyle($danger, $white);
+    }
+}

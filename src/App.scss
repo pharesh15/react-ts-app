@@ -1,0 +1,12 @@
+@import "css/mixins.scss";
+
+.App{
+    @include flex_col('center');
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main{
+    width: 100%;
+    flex-grow: 1;
+}

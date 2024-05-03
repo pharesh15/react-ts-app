@@ -1,0 +1,7 @@
+@import '../mixins';
+
+.show{
+    @include flex_row;
+    justify-content: start;
+    flex-wrap: wrap;
+}

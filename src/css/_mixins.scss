@@ -1,0 +1,54 @@
+@import "../css/variables";
+
+@mixin flex_col($align) {
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    justify-content: space-between;
+}
+
+@mixin flex_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin ul_li{
+    list-style-type: none;
+}
+
+@mixin commonStyle{
+    width: 100%;
+    padding: 0.8rem 12rem;
+    background-color: $primary;
+    color: $white;
+}
+
+@mixin labelStyle{
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    text-transform: capitalize;
+}
+
+@mixin inputStyle{
+    padding: 0.7rem 0.3rem;
+    font-size: 0.9rem;
+    border: 1px solid $secondary;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+@mixin btnStyle($bgColor, $textColor){
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    background-color: $bgColor;
+    border: none;
+    outline: none;
+    color: $textColor;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+@mixin requiredStyle{
+    color: $danger;
+}
